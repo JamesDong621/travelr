@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="%sveltekit.assets%/favicon.png" />
+        <meta name="viewport" content="width=device-width" />
+    </head>
+    <style type="text/css">
+        body{
+            background-color: Beige;
+        }
+        h1,h2{
+            color:maroon;
+        }
+        label{
+            display: flex;
+        }
+        h4{
+            color:green;
+        }
+        
+        textarea {
+            width: 320px;
+            height: 100px;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            flex-grow: 1;
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        nav .active {
+            background-color: lightgray;
+        }
+    </style>
+    <body data-sveltekit-preload-data="hover">
+
+        <script>
+        let activeTab = 'home';
+
+        function handleTabChange(event) {
+        activeTab = event.target.innerHTML.toLowerCase();
+        }
+        </script>
+
+        <nav>
+            <ul>
+            <li class:active={activeTab === 'Main'} on:click={handleTabChange}>Home</li>
+            <li class:active={activeTab === 'Page1'} on:click={handleTabChange}>About</li>
+            <li class:active={activeTab === 'Page2'} on:click={handleTabChange}>Contact</li>
+            </ul>
+        </nav>
+
+        
+        <h1>Hi,</h1>
+        <h2>check out the most time efficient traveling options:</h2>
+
+
+        <script>
+        let name = 'world';
+        </script>
+
+        <input value=destination>
+
+        <h3> Carbon Footprint Tracking</h3>
+        
+        <label>
+        <input type=number value={a} min=0 max=10>
+        <input type=range value={a} min=0 max=10>
+        </label>
+
+        <h4>you were able to lower your carbon emmissions by 30% this week!</h4>
+
+        <textarea>Check out your success:
+ 
+        1.Using public transportation -20%
+        2.Sharing a ride -5%
+        3.Walking back home -5%
+
+        </textarea>
+
+        
+
+
+    
+    </body>
+</html>
