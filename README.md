@@ -1,3 +1,10 @@
+# travelr
+
+![app page](https://user-images.githubusercontent.com/112031851/231833682-7518126b-0326-49d9-9518-f35358ca48e8.png)
+
+Travelr is a web platform designed to provide the most cost-effective and efficient way for travels who just fly to a new city. We provide the most accurate user recommendations by leveraging the Google Maps Platform API. At the same time, the platform also supports green travel, and you can win money by accumulating "Carbon Points!
+
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
